@@ -1,0 +1,99 @@
+#tittle{
+    display: flex;
+    margin-left: 28%;
+    margin-right: auto;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 60px;
+    color: black;
+}
+
+body{
+    background-image:url('media/horizon-transformed-transformed.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    
+    animation-name: change;
+    animation-duration: 10s ;
+    animation-direction:alternate-reverse ;
+    animation-fill-mode:forwards ;
+    animation-iteration-count: infinite;
+    animation-play-state:running ;
+    animation-timing-function: ease-in-out;
+    
+   
+    
+}
+#background{
+    position: relative;
+
+}
+#bigbox{
+    display: flex;
+    flex-direction: row;
+    margin-top: 190px;
+}
+
+.rectangle{
+    text-align: center;
+    display: flex;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 140px;
+    padding-top: 75px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 400px;
+    box-shadow: 5px 5px black;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+#img1{
+    background-image: url('media/background1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+#img2{
+    background-image: url('media/monalisa.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#img3{
+    background-image: url('media/skyscrapper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@keyframes change{
+    0%
+    {
+        background-image: url('media/savana.png');
+    }
+    20%
+    {
+        background-image: url('media/theater.png');
+    }
+    40%
+    {
+        background-image: url('media/horizon-transformed-transformed.jpeg');
+    }
+    60%
+    {
+        background-image: url('media/solar.png');
+    }
+    80%
+    {
+        background-image: url('media/penguins-transformed.jpeg');
+    }
+    100%
+    {
+        background-image: url('media/savana.png');
+    }
+}
+
