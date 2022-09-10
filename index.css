@@ -1,43 +1,64 @@
-#tittle{
+
+nav{
     display: flex;
-    margin-left: 28%;
-    margin-right: auto;
-    font-family: 'Abril Fatface', cursive;
-    font-size: 60px;
-    color: black;
+    width: 100%;
 }
 
+.language{
+    width: 150px;
+    padding-top: 20px;
+}
+
+#lato{
+    width: 300px;
+    height: 115px;
+}
+
+#tittle{
+    display: flex;
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    font-size: 70px;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 0%;
+    animation-name: colour;
+    animation-duration: 25s ;
+    animation-fill-mode:forwards ;
+    animation-iteration-count: infinite;
+    animation-play-state:running ;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+}
+
+
 body{
-    background-image:url('media/horizon-transformed-transformed.jpeg');
+    background-image:url('media/purplesavana.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-
-    
     animation-name: change;
-    animation-duration: 10s ;
+    animation-duration: 25s ;
     animation-direction:alternate-reverse ;
     animation-fill-mode:forwards ;
     animation-iteration-count: infinite;
     animation-play-state:running ;
     animation-timing-function: ease-in-out;
-    
-   
+    animation-delay: 0.5s;
     
 }
-#background{
-    position: relative;
 
-}
 #bigbox{
     display: flex;
     flex-direction: row;
     margin-top: 190px;
+    margin-bottom: 100px;
 }
 
 .rectangle{
     text-align: center;
     display: flex;
+    background-position: center center;
     color: white;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
@@ -47,25 +68,32 @@ body{
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 400px;
-    box-shadow: 5px 5px black;
+    box-shadow: 5px 5px darkblue;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    transition: 0.3s;
 }
 
+.rectangle:hover{
+    box-shadow: 15px 15px darkmagenta;
+    transition: 0.3s;
+    
+}
 
 #img1{
     background-image: url('media/background1.png');
     background-repeat: no-repeat;
     background-size: cover;
+
    
 }
 
 #img2{
-    background-image: url('media/monalisa.png');
+    background-image: url('media/purplelisa.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 #img3{
-    background-image: url('media/skyscrapper.jpg');
+    background-image: url('media/purpleearth.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -73,27 +101,55 @@ body{
 @keyframes change{
     0%
     {
-        background-image: url('media/savana.png');
+        background-image: url('media/purplesavana.jpeg');
     }
     20%
     {
-        background-image: url('media/theater.png');
+        background-image: url('media/volcano.jpeg');
     }
     40%
     {
-        background-image: url('media/horizon-transformed-transformed.jpeg');
+        background-image: url('media/blueforest.jpg');
     }
     60%
     {
-        background-image: url('media/solar.png');
+        background-image: url('media/bluesolar.jpg');
     }
     80%
     {
-        background-image: url('media/penguins-transformed.jpeg');
+        background-image: url('media/purplehorizon.jpeg');
     }
     100%
     {
-        background-image: url('media/savana.png');
+        background-image: url('media/purplesavana.jpeg');
     }
 }
+
+@keyframes colour{
+    0%
+    {
+        color:darkblue ;
+    }
+    20%
+    {
+        color:turquoise ;
+    }
+    40%
+    {
+        color:purple ;
+    }
+    60%
+    {
+        color:purple ;
+    }
+    80%
+    {
+        color:darkblue ;
+    }
+    100%
+    {
+        color:darkblue ;
+    }
+}
+
 
