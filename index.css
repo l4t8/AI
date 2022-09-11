@@ -23,7 +23,7 @@ nav{
     padding-right: 300px;
     padding-top: 0%;
     animation-name: colour;
-    animation-duration: 25s ;
+    animation-duration: 60s ;
     animation-fill-mode:forwards ;
     animation-iteration-count: infinite;
     animation-play-state:running ;
@@ -38,8 +38,8 @@ body{
     background-repeat: no-repeat;
     background-position: center center;
     animation-name: change;
-    animation-duration: 25s ;
-    animation-direction:alternate-reverse ;
+    animation-duration: 60s ;
+    animation-direction:linear ;
     animation-fill-mode:forwards ;
     animation-iteration-count: infinite;
     animation-play-state:running ;
@@ -83,7 +83,7 @@ body{
     background-image: url('media/background1.png');
     background-repeat: no-repeat;
     background-size: cover;
-
+    color: darkmagenta;
    
 }
 
@@ -91,11 +91,13 @@ body{
     background-image: url('media/purplelisa.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+    color: turquoise;
 }
 #img3{
     background-image: url('media/purpleearth.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+    color: darkblue;
 }
 
 @keyframes change{
