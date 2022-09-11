@@ -1,0 +1,115 @@
+body{
+    text-align: center;
+    color: white;
+}
+
+#gradientbackground{
+    background-image: linear-gradient(
+        to right,
+        darkblue,
+        darkblue,
+        darkmagenta
+      ); ;
+    background-size: cover;
+
+    animation-name: gradient;
+    animation-duration: 60s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.8s;
+    animation-direction: alternate-reverse;
+    animation-fill-mode:forwards ;
+    animation-iteration-count: infinite;
+
+}
+.boxwithimg{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 250px;
+    padding-right: 250px;
+}
+
+#image{
+    width: 100%;
+    height: auto;
+}
+.question{
+    font-size: 50px;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    padding-left: 320px;
+    padding-right: 90px;
+}
+.box2{
+    font-size: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+    
+}
+
+
+.question2{
+    font-size: 60px;
+
+}
+
+#img2{
+    width: 60%;
+}
+
+@keyframes gradient{
+    0%
+    {
+        background-image:linear-gradient(
+            to right,
+            darkblue,
+            darkblue,
+            darkmagenta
+            
+          ); 
+    }
+    25%
+    {
+        background-image:linear-gradient(
+            to right,
+            darkblue,
+            darkmagenta,
+            darkblue
+          ); 
+    }
+    50%
+    {
+            background-image:linear-gradient(
+                to right,
+                darkmagenta,
+                darkblue,
+                darkblue             
+              ); 
+    }
+    75%
+    {
+        background-image:linear-gradient(
+                to right,             
+                darkblue,
+                darkmagenta,
+                darkblue             
+              ); 
+
+
+        
+    }
+    100%
+    {
+        background-image:linear-gradient(
+            to right,
+            darkblue
+            darkblue
+            darkmagenta,
+            
+          ); 
+    }
+}
